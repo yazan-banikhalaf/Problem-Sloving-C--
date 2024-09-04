@@ -1,0 +1,21 @@
+#include<iostream>
+#include<algorithm>
+
+using namespace std;
+
+int main()
+{
+    char x;
+    
+    cin >> x;
+    
+    int asciiValue = (int)x;
+ 
+   if (asciiValue >= 96) {
+       cout << "ALPHA\nIS SMALL";
+   } else if(asciiValue < 96 && asciiValue >= 65) {
+       cout << "ALPHA\nIS CAPITAL";
+   } else {
+       cout << "IS DIGIT";
+   }
+}
