@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    
+    int numInteger1, numInteger2;
+    char op;
+    
+    cin >> numInteger1 >> op >> numInteger2;
+    
+    switch(op) {
+        case '+':
+        cout << numInteger1 + numInteger2;
+        break;
+        
+        case '-':
+        cout << numInteger1 - numInteger2;
+        break;
+        
+        case '*':
+        cout << numInteger1 * numInteger2;
+        break;
+        
+        case '/':
+        cout << numInteger1 / numInteger2;
+        break;
+        
+    }
+    return 0;
+}

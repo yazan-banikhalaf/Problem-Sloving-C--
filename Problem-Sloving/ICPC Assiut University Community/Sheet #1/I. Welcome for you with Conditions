@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+#include<algorithm>
+
+using namespace std;
+
+int main()
+{
+    int a,b;
+    cin >> a >> b;
+    int maximum = max(a,b);
+    maximum == a ? cout << "Yes" : cout << "No";    
+    return 0;
+}

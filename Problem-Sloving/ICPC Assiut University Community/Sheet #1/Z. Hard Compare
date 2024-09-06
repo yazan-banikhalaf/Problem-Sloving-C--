@@ -1,0 +1,23 @@
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    double x, y, a, b;
+    
+    cin >> x >> y >> a >> b;
+    
+    double powX = y*log(x);
+    double powA = b*log(a);
+    
+   if(powX > powA) {
+       cout << "YES";
+   } else {
+       cout << "NO";
+   }
+    
+    return 0;
+}

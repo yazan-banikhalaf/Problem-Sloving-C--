@@ -1,0 +1,26 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+    int x,x1, y,y1, a,a1, b,b1, num, lastTwo;
+    cin >> x >> y >> a >> b;
+    num = x * y * a * b;
+    
+    x1 = x%100;
+    y1 = y%100;
+    a1 = a%100;
+    b1 = b%100;
+    
+    lastTwo = x1 * y1 * a1 * b1;
+    
+    if(lastTwo % 100 <= 9) {
+        cout << 0 << lastTwo%100 << endl;
+    } else {
+        cout << lastTwo % 100 << endl;
+    }
+   
+    return 0;
+}
