@@ -8,6 +8,6 @@ int main()
     double X, P, priceBefore;
     cin >> X >> P;
     priceBefore = P / (1 - (X/100));
-    cout <<  priceBefore << setprecision(2) <<endl;
+    cout <<  priceBefore << endl;
     return 0;
 }
