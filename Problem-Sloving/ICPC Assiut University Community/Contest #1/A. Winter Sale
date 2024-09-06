@@ -1,1 +1,13 @@
+#include<bits/stdc++.h>
 
+using namespace std;
+
+int main()
+{
+    cout << fixed << setprecision(2);
+    double X, P, priceBefore;
+    cin >> X >> P;
+    priceBefore = P / (1 - (X/100));
+    cout <<  priceBefore << setprecision(2) <<endl;
+    return 0;
+}
