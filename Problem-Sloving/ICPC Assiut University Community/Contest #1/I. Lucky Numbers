@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    string x;
+    
+    int num;
+    int num1;
+    int num2;
+    
+    cin >> x;
+    
+    stringstream ss;
+    stringstream ss1;
+    stringstream ss2;
+    
+    ss << x[0];
+    ss >> num1;
+
+    ss1 << x[1];
+    ss1 >> num2;
+    
+    ss2 << x;
+    ss2 >> num;
+    
+    if( 9 < num < 100) {
+        if(num2 == 0 || num1 % num2 == 0 || num2 % num1 == 0 ) {
+            cout << "YES";
+        } else {
+            cout << "NO";
+        }
+    } else {
+        cout << "Please enter number between 9 and 100. and the second digit is not 0" << endl;
+    }
+    
+    return 0;
+}
