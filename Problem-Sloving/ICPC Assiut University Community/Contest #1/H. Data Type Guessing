@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    double n, k, a;
+    
+    cin >> n >> k >> a;
+    
+    double x = n * k / a; // 25.3
+        
+    long long num = x; // 25
+    
+    double doub = x - num;
+    
+    // cout << x << endl;
+    // cout << num << endl;
+    // cout << doub << endl;
+    
+    if(doub > 0) {
+        cout << "double" << endl;
+        return 0;
+    } 
+    
+    if(num <= 2147483647) {
+        cout << "int";
+    } else {
+        cout << "long long";
+    }
+    
+    return 0;
+}
