@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+#include <iostream>
+
+using namespace std;
+int main()
+{
+	long long x, y, z, mn;
+	cin >> x >> y >> z;
+	
+	mn = min(x,min(y,z)); // 90 24 89
+
+	x = x - mn; // 66
+	z = z - mn; // 65
+	
+	if (x / 2 >= z) // 
+		cout << z + mn;
+	else
+		cout << x / 2 + mn;
+}
