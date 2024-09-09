@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+    int n;
+    
+    cin >> n;
+    
+    long long sum = 1;
+    
+    for(int i = 1; i <= n; i++) {
+        int num;
+        cin >> num;
+        
+        for(int j = 1; j <= num; j++) {
+            sum *= j;
+        }
+        cout << sum << "\n";
+        sum = 1;
+    }
+    return 0;
+}
