@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+    
+    int number1, number2, c = -1;
+    cin >> number1 >> number2;
+    
+    
+    for (int i = number1; i<=number2; i++) {
+        int x = i, flag = 0;
+        while(x) {
+            if (x % 10 == 4 || x % 10 == 7) {
+                x /= 10;
+            } else {
+                flag++;
+                break;
+            }
+        }
+        if(flag == 0) {
+            cout << i << " ";
+            c++;
+        }
+    }
+    if(c == -1) {
+        cout << c << endl;
+    }
+    return 0;
+}
