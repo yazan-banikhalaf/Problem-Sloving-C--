@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int prime(int number) {
+    int div = number/2;
+    for(int i = 2; i <= div; i++) {
+        if(number % i == 0) {
+            return -1;
+        }
+    }
+    return number;
+}
+int main() {
+
+    int counter;
+    cin >> counter;
+    
+    for(int i = 2; i <= counter; i++) {
+        int result;
+        result = prime(i);
+        if(result != -1) {
+            cout << result << " ";
+        }
+    }
+    
+	return 0;
+}
