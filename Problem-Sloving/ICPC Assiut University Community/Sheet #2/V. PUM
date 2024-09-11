@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+// Function to calculate the sum of digits of a number
+
+int main() {
+    int number;
+    cin >> number;
+    int size = number * 4;
+    for (int i = 1; i < size+1; i++) {
+        if (i % 4 == 0) {
+            cout << "PUM" << endl;
+            continue;
+        }
+         cout << i << " " ;
+    }
+    return 0;
+}
