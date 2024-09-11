@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n, n2, sum = 0;
+    
+    while(cin >> n >> n2) {
+        if(n <= 0 || n2 <= 0) {
+            return 0;
+        }
+        int maxi = max(n,n2);
+        int mini = min(n,n2);
+        
+        for(int i = mini; i <= maxi; i++) {
+            cout << i << " ";
+            sum += i;
+        }
+        cout << "sum =" << sum;
+        sum = 0;
+        cout << endl;
+    }
+    
+    return 0;
+}
