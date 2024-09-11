@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+    
+    char S = '*';
+    int counter;
+    cin >> counter;
+    for(int i = 1; i<=counter; i++){
+        for(int j = i; j <=counter; j++) {
+            cout << S;
+        }
+        cout << endl;
+    }
+    return 0;
+}
