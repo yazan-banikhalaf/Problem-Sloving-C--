@@ -7,8 +7,7 @@ int main()
     cin >> size;
     int start = 0;
     int second = 1;
-    int ft = 0;
-    int sec = 0;
+
     if(size == 1) {
         cout << start << " ";
     } else if(size == 2) {
