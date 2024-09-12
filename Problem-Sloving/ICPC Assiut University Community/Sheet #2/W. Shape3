@@ -1,0 +1,35 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    int spaces = n;
+    
+    int space = 1;
+    for(int i = 1; i <= n; i++) {
+        for(int x = spaces - 1; x > 0; x--) {
+            cout << " ";
+        }
+        spaces--;
+        for(int j =2; j <= i*2; j++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    for(int k = 1; k <= n; k++) {
+        for(int s = 0; s <= spaces - 1; s++) {
+            cout << " ";
+        }
+        spaces++;
+        for(int z = n*2; z >= k*2; z--) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
