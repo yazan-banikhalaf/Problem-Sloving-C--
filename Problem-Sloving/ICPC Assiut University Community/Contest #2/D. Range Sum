@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    
+    cin >> n;
+    
+    while(n--){
+        long long L, R, ma, mi;
+        cin >> L >> R;
+        
+        ma = max(L, R); // 6
+        mi = min(L, R); // 3
+        
+       
+        
+        long long L_RESULT = mi * (mi - 1) / 2; // 3
+        long long R_RESULT = ma * (ma + 1) / 2; // 21 
+        
+        long long sum = R_RESULT - L_RESULT;
+        
+        cout << sum << endl;
+    }
+    
+    return 0;
+}
