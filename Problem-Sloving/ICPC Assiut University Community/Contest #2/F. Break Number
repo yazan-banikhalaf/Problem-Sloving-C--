@@ -20,8 +20,8 @@ int main() {
         }
 
         maxDivCount = max(maxDivCount, divCount);
-        cout << maxDivCount << endl;
     }
+    cout << maxDivCount << endl;
 
 
     return 0;
