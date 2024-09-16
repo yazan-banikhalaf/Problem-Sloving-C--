@@ -3,14 +3,14 @@ using namespace std;
 
 int main()
 {
-    int seat;
+    long long seat;
     cin >> seat;
     
-    int row = seat / 4;
+    long long row = seat / 4;
     
     cout << row << " ";
     
-    int column;
+    long long column;
     
     if(row % 2 == 0){
         column = seat % 4;
