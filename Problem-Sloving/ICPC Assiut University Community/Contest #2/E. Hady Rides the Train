@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int seat;
+    cin >> seat;
+    
+    int row = seat / 4;
+    
+    cout << row << " ";
+    
+    int column;
+    
+    if(row % 2 == 0){
+        column = seat % 4;
+    } else {
+        column = 3 - (seat % 4);
+    }
+    cout << column;
+    
+    return 0;
+}
